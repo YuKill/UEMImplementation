@@ -1,0 +1,31 @@
+2-A
+
+Primeiro select, feito sem otimizacao
+
+Q1 : 	select resultados.tipo,date_part('month', requisicao.datarequisicao) as mes, date_part('year', requisicao.datarequisicao) as ano, count(resultados.tipo) from resultados,requisicao where resultados.numprotocolo=requisicao.numprotocolo group by tipo,mes,ano order by ano,mes;
+
+Para otimizar foi criado um Index no campo NumProtocolo, da tabela Resultados
+
+
+Q2:  	CREATE INDEX index_protocolo ON Resultados (NumProtocolo);
+ 
+Tempo de execucao 
+Q1 = 0.048s
+Apos implementar o index = 0.034s 
+(ambos sao tempo de execucao medio de 10 execucoes)
+
+
+2-B
+
+Primeiro select, sem otimizacao
+
+Q3 = select p.NomePaciente, extract( year from age( CURRENT_DATE,p.DataNascimento)) as idade,p.CodSeguradora, p.CodGrupo, r.DataRequisicao, res.Tipo from Pacientes p, Requisicao r, Resultados res where extract( year from age( CURRENT_DATE,p.DataNascimento))>30 and p.NumPaciente = r.NumPaciente and r.NumProtocolo=res.NumProtocolo" 
+
+Select otimizado
+
+Q4 = SELECT P.nomepaciente,extract( year from age( CURRENT_DATE,p.DataNascimento)) , P.codseguradora, P.codgrupo, REQ.datarequisicao, REQ.tipo FROM PACIENTES P, (SELECT R.datarequisicao, R.NUMPACIENTE, R.IDADE, RES.tipo FROM REQUISICAO R, (SELECT RE.NUMPROTOCOLO, RE.tipo FROM RESULTADOS RE) AS RES WHERE R.NUMPROTOCOLO = RES.NUMPROTOCOLO) AS REQ WHERE P.NUMPACIENTE = REQ.NUMPACIENTE AND  extract( year from age( CURRENT_DATE,p.DataNascimento))>30;
+
+Tempo de execucao
+Q3:0.573s
+Q4:0.461s
+(media de 10 execucoes)

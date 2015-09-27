@@ -1,0 +1,54 @@
+public void consultar(String param, String busca) {
+        List<Matricula> mAux = new ArrayList<Matricula>();
+        if (busca.trim().equals("")) {
+            getAllActive();
+        } else if (param.equals("nome")) {
+            List<Aluno> aluno = ep.search(Aluno.class, new CriteriaGroup("eq", "estado", "ativo", null),
+                    new CriteriaGroup("like", param, "%" + busca + "%", null));
+            System.out.println("param: " + param + " busca: " + busca);
+            if (aluno.isEmpty()) {
+                matriculas.clear();
+            } else {
+                matriculas = ep.search(Matricula.class,
+                        new CriteriaGroup("eq", "aluno", aluno.get(0), null));
+            }
+            System.out.println("ponto4");
+        } else if (param.equals("curso")) {
+            matriculas.clear();
+            for (Nivel n : (List<Nivel>) ep.search(Nivel.class, new CriteriaGroup("eq", "curso",
+                    (Curso) ep.search(Curso.class, new CriteriaGroup("eq", "nome", busca, null)).get(0), null))) {
+                for (Turma t : (List<Turma>) ep.search(Turma.class, new CriteriaGroup("eq", "nivel", n, null))) {
+                    mAux.addAll(ep.search(Matricula.class, new CriteriaGroup("eq", "turma", t, null)));
+                }
+            }
+            for (Matricula m : mAux) {
+                if (m.getAluno().getEstado().equals("ativo") && m.getEstado().equals("ativo")) {
+                    matriculas.add(m);
+                }
+            }
+        } else if (param.equals("turma")) {
+            matriculas.clear();
+            for (Turma t : (List<Turma>) ep.search(Turma.class, new CriteriaGroup("like", "turma", "%" + busca + "%", null))) {
+                matriculas.addAll(ep.search(Matricula.class, new CriteriaGroup("eq", "turma", t, null)));
+            }
+            for (Matricula m : mAux) {
+                if (m.getAluno().getEstado().equals("ativo") && m.getEstado().equals("ativo")) {
+                    matriculas.add(m);
+                }
+            }
+        } else if (param.equals("nivel")) {
+            matriculas.clear();
+            for (Nivel n : (List<Nivel>) ep.search(Nivel.class, new CriteriaGroup("like", "nome", "%" + busca + "%", null))) {
+                for (Turma t : (List<Turma>) ep.search(Turma.class, new CriteriaGroup("eq", "nivel", n, null))) {
+                    mAux.addAll(ep.search(Matricula.class, new CriteriaGroup("eq", "turma", t, null)));
+                }
+            }
+            for (Matricula m : mAux) {
+                if (m.getAluno().getEstado().equals("ativo") && m.getEstado().equals("ativo")) {
+                    matriculas.add(m);
+                }
+            }
+        } else {
+            matriculas = ep.search(Matricula.class, new CriteriaGroup("eq", param, busca, null));
+        }
+    }

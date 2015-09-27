@@ -1,0 +1,149 @@
+71
+Puma concolor
+Onça parda
+É carnívora. Mede cerca de 0,70 m, do ombro ao chão, e até 2,30 m de comprimento. Um macho adulto pode pesar até 50 kg. Apesar de seu grande porte a onça parda é mais aparentada com os gatos do que com a onça-pintada (Panthera onca). Por isso sua voz é um miado e não um poderosorugido. Vive nas três Américas, do Canadá à Patagônia.
+#
+75
+Blastocerus dichotomus
+Cervo do Pantanal
+É o maior cervídeo da América do Sul. Pesa em média 100 kg, mas alguns indivíduos adultos podem ultrapassar 150kg. É característico de áreas inundáveis e de varjões de cerrado, onde se alimenta de capim e plantas palustres.
+#
+80
+Lepidochelys olicacea
+Tartaruga Oliva
+É a menor e mais desconhecida tartaruga no Brasil.
+#
+5
+Eretmochelys imbricata
+Tartaruga de Pente
+É conhecida popularmente como Tartaruga de Pente, pois seu casco era utilizado para a fabricação de adornos como pentes, aros de óculos, bijuterias e talheres. O comprimento da carapaça varia de 53cm à 115cm quando adultas e podem chegar a pesar 150Kg.
+#
+7
+Dermochelys coriacea
+Tartaruga de Couro
+É a maior espécie de tartaruga marinha e também a mais forte. Pode medir até dois metros de comprimento de casco e pesar 700 quilos, embora já tenha sido encontrado um exemplar com 900 quilos. De cor preta, com pontos brancos, tem o casco menos rígido que as outras, parecendo quase um couro, por isso ganhou esse nome.
+#
+9
+Natator depressus
+Tartaruga Flatback
+Sua presença se limita às águas dos litorais das regiões noroeste, norte e nordeste da Austrália e do golfo de Papua Nova Guiné. Prefere águas costeiras, baías e recifes de coral. Possui em média 90 centímetros de comprimento curvilíneo de carapaça e pesa em média 120 quilos.
+#
+10
+Lepidochelys kempii
+Tartaruga Lora
+A maioria dos indivíduos adultos se encontra no Golfo do México. Preferem áreas rasas com fundos arenosos e enlameados. Possui tamanho entre 60 e 70cm de comprimento curvilíneo de carapaça e pesa entre 35 e 50 quilos.
+#
+20
+Ara chloroptera
+Arara Vermelha
+O habitat da arara vermelha tinha uma grande área de distribuição, ela era encontrada do Panamá ao Paraguai. No Brasil existia até no Rio de Janeiro e no Paraná, hoje só sobrevive em quantidade na Amazônia, nas demais áreas está se tornando rara.
+#
+40
+Ara ararauna
+Arara canindé
+Mede cerca de 80 cm de comprimento. Grande e de rabo longo. Inconfundível e vistosa coloração azul ultramarino no dorso, e amarelo-dourado na parte inferior desde a face, ventre até o rabo, garganta com linha negra e área nua na cabeça com linha de penas negras.
+#
+61
+Anodorhynchus hyacinthinus
+Arara azul grande
+Mede cerca de 98 centímetros de comprimento e pesa 1,5 quilo. Coloração inconfundível, principalmente azul intensa, com diferentes tonalidades. Base do bico e anel ocular nus e de cor amarela, partes internas das asas e rabo negras.
+#
+46
+Anodorhynchus leari
+Arara azul de lear
+Chega até 75 cm de comprimento e pesa 940 gramas. É parecida com a Arara azul grande (Anodorhynchus hyacinthinus), mas é bem menor, sua plumagem é menos brilhante e a mancha amarela que ambas têm junto ao bico é maior na arara azul de lear.
+#
+48
+Haliaetus leucocephalus
+Águia americana
+É uma águia nativa da América do Norte e o símbolo nacional dos Estados Unidos. Seu comprimento está em torno de 1,1 m e a envergadura varia entre 1,9 m a 2,50 m. Suas asas são quadrangulares, com as extremidades penteoladas. Seu pio é cacarejado, chiado e áspero.
+#
+2
+Hieraaetus pennatus
+Águia de Botas
+Nativa das florestas da Europa e da Ásia ocidental. No inverno migra para o sul da Ásia ou para a África, onde faz o seu ninho. Durante a permanência em zona temperada, ou seja, durante o período de reprodução, a água de botas habita unicamente as florestas.
+#
+15
+Aquila chrysaetos
+Águia Dourada
+A águia dourada existe na Eurásia e África do Norte e na América do Norte. As asas são grandes e arredondadas. Machos e fêmeas são semelhantes na aparência, porém, as fêmeas são maiores que o macho.
+#
+16
+Pitecophaga jefferyi
+Águia Filipina
+É encontrada somente nas ilhas Filipinas. É castanho escura nas costas e branca no ventre. Na cabeça leva uma crista de penas, como se fosse um manto. As asas são relativamente curtas e redondas, enquanto a cauda é comprida e reta na extremidade. Possui pernas poderosas com garras enormes ebico estreito e recurvado.
+#
+29
+Pandion haliaetus
+Águia Pesqueira
+Vive na parte ocidental da América do Norte, América Central e Antilhas, de onde emigra para a América do Sul. Habitam as regiões costeiras ou próximas de lagos e rios. No fim do verão, as águias-pesqueiras deixam a região onde reproduzem e partem para o sul. Mas, na primavera seguinte cada casal vem procriar exatamente no mesmo lugar.
+#
+30
+Harpia harpyja
+Gavião Real ou Harpia
+Mais poderosa predadora entre as aves de rapina do mundo, o gavião-real ou harpia é a maior ave de rapina da América do Sul, possuindo porte majestoso e imponente. P ode medir de 50 a 90 cm de altura, cerca de 105 cm de comprimento e possui 2 m de envergadura.
+#
+31
+Rupornis magnirostris
+Gavião Carijó
+Mede 36 cm de comprimento. É a espécie predominante no Brasil. Asas compridas e largas de "pontas abertas" tal como nos urubus, cauda curta, conjunto apropriado para planar em espaços abertos.
+#
+70
+Megaptera novaeangliae
+Baleia Jubarte
+Entre todas as baleias, a jubarte é a mais maciça e menos esbelta. Devido às suas linhas, consideradas pouco hidrodinâmicas, por isso a baleia não tenha um desempenho tão bom quanto as outras, nada a uma velocidade de 6 a 12km/h. Durante muito tempo sofreu intensa predação, por viver grande parte da vida ao longo das costas marítimas.
+#
+76
+Balaenoptera musculus
+Baleia Azul
+Esta espécie é cosmopolita, isto é, pode ser encontrada em todos os oceanos, embora as populações tenham diminuído bastante devido à captura comercial. A baleia-azul é o maior animal que se sabe já ter habitado a Terra. Em média medem entre 23 e 25m, mas podem chegar aos 30 metros de comprimento, e pesam cerca de 110 toneladas.
+#
+4
+Delphinapterus leucas
+Baleia branca ou Beluga
+A baleia branca habita as águas frias em torno do círculo polar ártico. A baleia-branca é um animal gregário que mede até 5 metros de comprimento e pesa até 1,5 toneladas. É capaz de conviver com humanos e mesmo assimilar seus hábitos se adotado ainda filhote.
+#
+11
+Physeter macrocephalus
+Baleia cachalote
+A baleia-cachalote é facilmente reconhecível pela forma quadrada de sua cabeça, que corresponde a 40% de seu corpo. Pode ser encontrada em todos os oceanos. No entanto, só os machos percorrem grandes distâncias para chegarem aos extremos do globo.
+#
+19
+Eubalena australis
+Baleia Franca
+Uma das mais impressionantes baleias do mundo e como todas as outras, sabemos muito pouco sobre a espécie. Pesquisadores acreditam que a fêmea tenha filhotes de 3 a 4 anos. Encontra-se distribuída em todos os oceanos do Hemisfério Sul. No Brasil, pode ser observada especialmente a poucos metros da costa durante os meses de inverno e primavera desde o Rio Grande do Sul até o sul da Bahia.
+#
+24
+Baleanoptera acutorostrata
+Baleia Minke
+Uma das menores espécies de baleias do mundo. São encontradas em águas tropicais, temperadas e frias de todos os oceanos, tanto em áreas costeiras como em oceânicas. No Brasil, são vistas em toda costa.
+#
+37
+Balaenoptera borealis
+Baleia Boreal
+Sua principal característica é uma excrescência córnea, em geral recoberta por pequenos crustáceos, sobre o maxilar superior. Apresenta partes brancas em sua pele, devida a ação de parasitas. Sua cabeça equivale a um quarto de seu comprimento total. Pode ser encontrada no oceano Atlântico e no oceano Pacífico norte.
+#
+39
+Pteronura brasiliensis
+Ariranha
+A ariranha é um parente próximo da lontra, porém bem maior: pode atingir 2,20 m de comprimento. Como a lontra, tem hábitos gregários e vive ao longo das margens dos rios. Atualmente é encontrada nos rios da região centro-leste da Amazônia, no Brasil, da Venezuela, Guiana, Paraguai e Uruguai.
+#
+53
+Bradypus variegatus
+Bicho-preguiça
+O bicho-preguiça tem como estratégia de sobrevivência os movimentos lentos e silenciosos e a pelagem que se confunde com as árvores, desviando a atenção dos predadores naturais. Natural da Mata Atlântica e da Amazônia, o preguiça pode ser encontrado também em outros países da América do Sul e da América Central.
+#
+35
+Dasyprocta Aguti
+Cotia
+Roedor de tamanho intermediário, de patas longas e finas, com uma cauda rudimentar, que costuma ficar escondida entre o pelo. A cabeça é estreita, com o focinho achatado, os olhos grandes e as orelhas médias e largas. Sua pelagem é curta e áspera de cor vermelho-amarelada. Vive em selvas caducifólias e chuvosas tanto primárias como secundárias, bosques (em galerias) e plantações das Guianas e do Brasil.
+#
+90
+Inia geoffrensis
+Boto-cor-de-rosa
+É um animal solitário. Alimenta-se de peixes, mas pode também ingerir moluscos e crustáceos. A coloração pode variar bastante com a idade, atividade e local em que o animal vive e está ligada com a irrigação sanguínea dos vasos subcutâneos. Ocorre na América do Sul, na bacia do Orenoco e Amazonas. O maior comprimento registrado é de 2,50m, e o peso pode ultrapassar 160kg.
+#
+45
+Felis pardalis
+Jaguatirica
+Este felino de médio porte é predominantemente noturno, possuindo coloração amarelada com numerosas manchas negras arredondadas pelo corpo, que formam anéis somente na cauda. Pesa até 15 Kg e sua altura é de aproximadamente 50 cm. Habita florestas úmidas e campos, ocorrendo em quase todo o Brasil e América Meridional.

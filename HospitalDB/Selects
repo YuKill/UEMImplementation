@@ -1,0 +1,21 @@
+	time psql -h localhost -p 5432 -d hospitaldb -U admin -c "select p.NomePaciente, extract( year from age( CURRENT_DATE,p.DataNascimento)) as idade,p.CodSeguradora, p.CodGrupo, r.DataRequisicao, r.Tipo from Pacientes p, (select r.datarequisicao, r.numpaciente, res.tipo from requisicao r, resultados res where r.NumProtocolo=res.NumProtocolo) r where extract( year from age( CURRENT_DATE,p.DataNascimento))>30 and p.NumPaciente = r.NumPaciente;" -w 
+
+	time psql -h localhost -p 5432 -d hospitaldb -U admin -c "select p.NomePaciente,  p.idade,p.CodSeguradora, p.CodGrupo, r.DataRequisicao, res.Tipo from  (select datarequisicao, numprotocolo from requisicao where p.numpaciente=numpaciente) r, (select numpaciente, nomePaciente, extract( year from age( CURRENT_DATE,DataNascimento)) as idade, CodSeguradora,CodGrupo from pacientes where extract( year from age( CURRENT_DATE,DataNascimento)) >30) p, Resultados res where r.NumProtocolo=res.NumProtocolo;" -w
+
+
+
+time psql -h localhost -p 5432 -d hospitaldb -U admin -c "select p.NomePaciente, extract( year from age( CURRENT_DATE,p.DataNascimento)) as idade,p.CodSeguradora, p.CodGrupo, r.DataRequisicao, res.Tipo from Pacientes p, Requisicao r, Resultados res where extract( year from age( CURRENT_DATE,p.DataNascimento))>30 and p.NumPaciente = r.NumPaciente and r.NumProtocolo=res.NumProtocolo" -w
+
+SELECT P.nomepacinte, REQ.idade, 
+    P.codseguradora, P.codseguro,
+    P.dataultimarequisicao, REQ.NOMEATRIBUTO 
+FROM PACIENTE P,
+    (SELECT R.NUMPACIENTE, R.IDADE, REXAME.NOMEATRIBUTO 
+    FROM REQUISICAO R, 
+        (SELECT RE.NUMPROTOCOLO, RE.NOMEATRIBUTO 
+        FROM RESULTADOEXAME RE) AS REXAME 
+    WHERE R.NUMPROTOCOLO = REXAME.NUMPROTOCOLO AND R.IDADE > 30) AS REQ
+WHERE P.NUMPACIENTE = REQ.NUMPACIENTE;
+
+
+time psql -h localhost -p 5432 -d hospitaldb -U admin -c"SELECT P.nomepaciente,extract( year from age( CURRENT_DATE,p.DataNascimento)) , P.codseguradora, P.codgrupo, REQ.datarequisicao, REQ.tipo FROM PACIENTES P, (SELECT R.datarequisicao, R.NUMPACIENTE, R.IDADE, RES.tipo FROM REQUISICAO R, (SELECT RE.NUMPROTOCOLO, RE.tipo FROM RESULTADOS RE) AS RES WHERE R.NUMPROTOCOLO = RES.NUMPROTOCOLO) AS REQ WHERE P.NUMPACIENTE = REQ.NUMPACIENTE AND  extract( year from age( CURRENT_DATE,p.DataNascimento))>30;" -w

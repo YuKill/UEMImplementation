@@ -1,0 +1,68 @@
+
+RRN: 0
+Chaves: 2 | 4 | 5 | 7
+Offsets: 3516 | 6136 | 755 | 1060
+Filhos: 
+
+
+RRN: 1
+Chaves: 75 | 76 | 80 | 90
+Offsets: 380 | 5757 | 660 | 8963
+Filhos: 
+
+
+RRN: 2
+Chaves: 9 | 16
+Offsets: 1430 | 4071 | 
+Filhos: 0 | 3 | 5
+
+
+RRN: 3
+Chaves: 10 | 11 | 15
+Offsets: 1761 | 6456 | 3823 | 
+Filhos: 
+
+
+RRN: 4
+Chaves: 45 | 46 | 48
+Offsets: 9390 | 2906 | 3197 | 
+Filhos: 
+
+
+RRN: 5
+Chaves: 19 | 20 | 24
+Offsets: 6754 | 2024 | 7188 | 
+Filhos: 
+
+
+RRN: 6
+Chaves: 30 | 31
+Offsets: 4822 | 5129 | 
+Filhos: 
+
+
+RRN: 7
+Chaves: 35 | 40 | 53 | 71
+Offsets: 8517 | 2317 | 8149 | 0
+Filhos: 6 | 10 | 4 | 9 | 1
+
+
+---------ROOT---------
+RRN: 8
+Chaves: 29
+Offsets: 4436 | 
+Filhos: 2 | 7
+----------------------
+
+
+RRN: 9
+Chaves: 61 | 70
+Offsets: 2619 | 5368 | 
+Filhos: 
+
+
+RRN: 10
+Chaves: 37 | 39
+Offsets: 7442 | 7811 | 
+Filhos: 
+

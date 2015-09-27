@@ -1,0 +1,10 @@
+.*.swp
+*.o
+*.out
+*.txt
+mp
+*.ans
+par
+seq
+
+Artigos*
