@@ -35,3 +35,5 @@ You have to specify an object file following the description bellow:
 ```
 
 The other coordinates (P0, P1, P2, R0 and the Camera  or Direction vector) must be specified separating the X, Y and Z by a ```space```, as mentioned in the  UI.
+
+More on https://github.com/YuKill/UEMImplementation/tree/master/PerspectiveProj
