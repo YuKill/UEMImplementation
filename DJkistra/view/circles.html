@@ -1,0 +1,14 @@
+<% for (var Elem in List) { %>
+<div class="col-lg-4 col-xs-6 text-center">
+  <% var H3Name = "" %>
+  <% if (Control === "artists") { %>
+    <% H3Name = Elem %>
+  <% } else { %>
+    <% H3Name = Elem.split(":")[1] %>
+  <% } %>
+  <a href="/<%= Control %>/<%= Elem %>" class="list-group-item">
+    <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+    <h3><%= H3Name %></h3>
+  </a>
+</div>
+<% } %>

@@ -1,0 +1,12 @@
+{
+  "name": "dj-kistra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "path": "^0.12.7"
+  }
+}
