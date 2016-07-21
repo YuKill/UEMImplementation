@@ -1,14 +1,18 @@
-<% for (var Elem in List) { %>
+
+<% List.forEach(function(Elem) { %>
+<% var H3Class = "" %>
+<% if (Control === "albumns") { %>
+<% H3Class = "list-group-item-heading" %>
+<% } else { %>
+<% } %>
 <div class="col-lg-4 col-xs-6 text-center">
-  <% var H3Name = "" %>
-  <% if (Control === "artists") { %>
-    <% H3Name = Elem %>
-  <% } else { %>
-    <% H3Name = Elem.split(":")[1] %>
-  <% } %>
   <a href="/<%= Control %>/<%= Elem %>" class="list-group-item">
     <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-    <h3><%= H3Name %></h3>
+    <h3 class="<%= H3Class %>"><%= Elem.split(":")[0] %></h3>
+
+    <% if (Control === "albumns") { %>
+    <h4 class="list-group-item-text"><%= Elem.split(":")[1] %></h4>
+    <% } %>
   </a>
 </div>
-<% } %>
+<% }) %>

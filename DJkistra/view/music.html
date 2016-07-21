@@ -1,5 +1,9 @@
 <div class="list-group col-xs-12 col-lg-12">
-  <% List.forEach(function(Music) { %>
-  <a href="/add/<%= Music + ":" + Head %>" class="list-group-item text-center"><h3><%= Music %></h3></a>
+  <% List.forEach(function(MusicTuple) { %>
+  <a href="/add/<%= MusicTuple %>" class="list-group-item text-center">
+    <h3>
+      <%= MusicTuple.split(":")[0] %>
+    </h3>
+  </a>
   <% }) %>
 </div>

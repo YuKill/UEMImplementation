@@ -1,10 +1,10 @@
 <ul class="list-group col-xs-12 col-lg-12">
   <hr>
-  <% List.forEach(function(Pair) { %>
+  <% List.forEach(function(Tuple) { %>
   <li class="list-group-item text-center">
-    <h3 class="list-group-item-heading"><%= Pair.split(":")[0] %></h3>
-    <a href="/rem/<%= Pair %>" class="badge label label-danger hidden-xs">X</a>
-    <h4 class="list-group-item-text"><%= Pair.split(":")[1] %></h4>
+    <h3 class="list-group-item-heading"><%= Tuple.split(":")[0] %></h3>
+    <a href="/rem/<%= Tuple %>" class="badge label label-danger hidden-xs">X</a>
+    <h4 class="list-group-item-text"><%= Tuple.split(":")[2] %></h4>
   </li>
   <hr>
   <% }) %>

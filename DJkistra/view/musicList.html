@@ -1,9 +1,9 @@
 <div class="list-group col-xs-12 col-lg-12">
   <hr>
-  <% List.forEach(function(Pair) { %>
-  <a href="/add/<%= Pair %>" class="list-group-item text-center">
-    <h3 class="list-group-item-heading"><%= Pair.split(":")[0] %></h3>
-    <h4 class="list-group-item-text"><%= Pair.split(":")[1] %></h4>
+  <% List.forEach(function(Tuple) { %>
+  <a href="/add/<%= Tuple %>" class="list-group-item text-center">
+    <h3 class="list-group-item-heading"><%= Tuple.split(":")[0] %></h3>
+    <h4 class="list-group-item-text"><%= Tuple.split(":")[2] %></h4>
   </a>
   <hr>
   <% }) %>
