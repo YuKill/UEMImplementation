@@ -8,10 +8,10 @@
 <div class="col-lg-4 col-xs-6 text-center">
   <a href="/<%= Control %>/<%= Elem %>" class="list-group-item">
     <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-    <h3 class="<%= H3Class %>"><%= Elem.split(":")[0] %></h3>
+    <h4 class="<%= H3Class %> ellipsis-of"><%= Elem.split(":")[0] %></h4>
 
     <% if (Control === "albumns") { %>
-    <h4 class="list-group-item-text"><%= Elem.split(":")[1] %></h4>
+    <h5 class="list-group-item-text ellipsis-of"><%= Elem.split(":")[1] %></h5>
     <% } %>
   </a>
 </div>
