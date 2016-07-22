@@ -95,6 +95,45 @@ function getMusicList() {
   return Musics;
 }
 
+function searchArtist(Artist) {
+  var Query = [];
+  var R = new RegExp(Artist, "i");
+  Artists.forEach(function(It) {
+    if (It.match(R) != null) {
+      Query.push(It); 
+    }
+  });
+  return Query;
+}
+
+function searchAlbumns(Albumn) {
+  var Query = [];
+  var R = new RegExp(Albumn, "i");
+  Artists.forEach(function(Artist) {
+    ArtistAlbumn[Artist].forEach(function(It) {
+      if (It.match(R) != null) {
+        Query.push(It + ":" + Artist); 
+      }
+    }); 
+  });
+  return Query;
+}
+
+function searchMusics(Music) {
+  var Query = [];
+  var R = new RegExp(Music, "i");
+  for (var Tuple in AAMusic) {
+    var VTuple = Tuple.split(":");
+    AAMusic[Tuple].forEach(function(It) {
+      if (It.match(R) != null) {
+        Query.push(It + ":" + VTuple[1] + ":" + VTuple[0]); 
+      }
+    }); 
+  }
+  console.log(Query);
+  return Query;
+}
+
 var source = process.argv[2];
 fs.lstat(source, function(err, stats) {
   if (stats.isDirectory()) {
@@ -118,9 +157,9 @@ var Queue = [];
 
 app.engine("html", require('ejs').renderFile)
 
+console.log("Archive: " + path.join(__dirname, "/teste"));
 app.use(express.static(path.join(__dirname, '/public')));
 app.set('views', path.join(__dirname, '/view'));
-app.use('archive', express.static(source));
 
 app.get('/', function(req, res) {
   res.redirect('/artists');
@@ -192,6 +231,16 @@ app.get('/queue', function(req, res) {
   res.render('index.html', Status);
 });
 
+app.get('/queue/content', function(req, res) {
+  var Status = { List: Queue.slice(1) }
+  res.render('queue.html', Status);
+});
+
+app.get('/queue/player', function(req, res) {
+  var Status = { Fullpath: Queue[0] }
+  res.render('player.html', Status);
+});
+
 app.get('/queue/next', function(req, res) {
   Queue.shift();
   res.redirect("/queue");
@@ -211,14 +260,31 @@ app.get('/rem/:name', function(req, res) {
   if (Idx != -1) {
     Queue.splice(Idx, 1);
   }
-  res.redirect("back");
+  console.log("Queue: " + Queue);
+  res.redirect("/queue/content");
 });
 
-app.get('/artists/query', function(req, res) {
+app.get('/query', function(req, res) {
   console.log("Request for: /artists/query");
-  console.log(req.params);
   console.log(req.query);
-  res.redirect('/')
+  var Query = req.query;
+  if (Query['mode'] === "artists") {
+    Query['list'] = searchArtist(Query['query']);
+    Query['head'] = "Artistas";
+  } else if (Query['mode'] === "albumns") {
+    Query['list'] = searchAlbumns(Query['query']);
+    Query['head'] = "Álbuns";
+  } else if (Query['mode'] === "musicList") {
+    Query['list'] = searchMusics(Query['query']);
+    Query['head'] = "Músicas";
+  }
+  var Status = {
+    Control: Query['mode'],
+    Search: true,
+    List: Query['list'], 
+    Head: Query['head']
+  }
+  res.render('index.html', Status);
 });
 
 app.listen(3000, function() {
