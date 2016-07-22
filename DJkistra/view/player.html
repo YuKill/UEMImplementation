@@ -1,0 +1,20 @@
+<% if (Fullpath != undefined) { %>
+<% var Path = Fullpath.split(":").reverse() %>
+<% console.log("Playing: /archive/" + Path.join("/")) %>
+<div class="jumbotron">
+  <div class="row">
+    <h4 class="col-lg-6 text-right"><strong>Artista:</strong></h4>
+    <h4 class="col-lg-6"><%= Path[0] %></h4>
+    <h4 class="col-lg-6 text-right"><strong>Álbum:</strong></h4>
+    <h4 class="col-lg-6"><%= Path[1] %></h4>
+    <h4 class="col-lg-6 text-right"><strong>Música:</strong></h4>
+    <h4 class="col-lg-6"><%= Path[2] %></h4>
+  </div>
+  <hr>
+  <div class="row">
+    <audio controls autoplay id="audioObj" class="col-lg-12" onended="window.location = '/queue/next'">
+      <source src="/archive/<%= Path.join("/") %>" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+<% } %>

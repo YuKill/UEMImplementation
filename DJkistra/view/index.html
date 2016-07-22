@@ -24,16 +24,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script>
-      var audioObj = document.getElementById("audioObj");
-      audioObj.addEventListener("ended", function() {
-        window.location = "/queue/next";
-      });
-    </script>
-
-
     <% if (Control === "queue") { %>
-    <meta http-equiv="refresh" content="3">
+    <script src="/js/ajax.js"></script>
     <% } %>
   </head>
 
@@ -80,13 +72,14 @@
       <% if (Search) { %>
       <!-- Introduction Row -->
       <div class="row">
-        <form role="form" action="/artists/query/?query=HAHA" method="get"> 
+        <form role="form" action="/query/" method="get"> 
           <div class="form-group">
             <div class="hidden-xs col-lg-2"></div>
             <div class="col-xs-8 col-lg-8">
               <label for="query" class="sr-only">Buscar:</label>
               <input type="text" class="form-control" id="query" name="query">
             </div>
+            <input type="text" class="sr-only" name="mode" value="<%= Control %>">
             <div class="col-xs-2 col-lg-1">
               <button type="submit" class="btn btn-success">Buscar</button> 
             </div>
@@ -96,16 +89,11 @@
       </div>
       <% } %>
 
-      <% var Path = "" %>
+      <div id="playerDiv">
       <% if (Control === "queue" && Fullpath != undefined) { %>
-      <% Path = Fullpath.split(":") %>
-      <div class="row">
-        <div class="col-lg-3"></div>
-        <audio controls id="audioObj" class="col-lg-5">
-          <source src="/archive/<%= Path.join("/") %>" type="audio/mpeg">
-        </audio>
-      </div>
+        <%- include('player.html') %>
       <% } %>
+      </div>
 
       <!-- Team Members Row -->
       <div class="row">
@@ -113,6 +101,7 @@
           <h2 class="page-header text-center" style="font-weight: bold"><%= Head %></h2>
         </div>
 
+        <div id="contentDiv">
         <% if (Control === "music") { %>
         <%- include('music.html') %>
         <% } else if (Control === "musicList") { %>
@@ -122,6 +111,7 @@
         <% } else { %>
         <%- include('circles.html') %>
         <% } %>
+        </div>
 
       </div>
 
