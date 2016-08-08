@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Site Vulneravel</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Site Muito Vulneravel!!!</h1>
+
+    <div style="width: 50%;border: 1px solid; margin: 50px 50px 50px 50px; padding: 50px 50px 50px 50px" >
+      <form method="get" action="/add/" style="text-align:center">
+        <input type="text" name="post">
+        <button type="submit">Postar</button>
+      </form>
+      <% posts.forEach(function(post) { %>
+      <br>
+      <div>
+        <strong>Post: </strong>
+        <%= post[1] %>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html>

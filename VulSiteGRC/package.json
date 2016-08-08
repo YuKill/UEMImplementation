@@ -1,0 +1,11 @@
+{
+  "name": "grc-site",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mariasql": "^0.2.6",
+    "path": "^0.12.7"
+  }
+}
