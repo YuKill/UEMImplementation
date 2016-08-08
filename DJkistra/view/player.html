@@ -1,7 +1,7 @@
 <% if (Fullpath != undefined) { %>
 <% var Path = Fullpath.split(":").reverse() %>
 <% console.log("Playing: /archive/" + Path.join("/")) %>
-<div class="jumbotron">
+<div class="jumbotron hidden-xs">
   <div class="row">
     <h4 class="col-lg-6 text-right"><strong>Artista:</strong></h4>
     <h4 class="col-lg-6"><%= Path[0] %></h4>
